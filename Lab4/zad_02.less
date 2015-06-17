@@ -1,0 +1,39 @@
+@fullheight:100%;
+
+html, body {
+        height: @fullheight;
+        margin: 0;
+}
+
+
+#all{
+    height: @fullheight;
+    display: flex;
+    flex-direction: row;
+    
+    #menu{
+        display: flex;
+        background-color: darkgray;
+        flex-direction: column;
+        align-items: center;
+        height: @fullheight;
+        max-width: 200px;
+        min-width: 200px;
+        
+        p{
+            background-color: white;
+            width: 80px;
+            
+            text-align: center;
+            border-left-style: solid;
+            border-left-color: gray;
+            border-left-width: 5px;
+            border-top-left-radius: 20px;
+        }
+    }
+    
+    #main{
+        background-color: lightgray;
+        height: @fullheight;
+    }
+}

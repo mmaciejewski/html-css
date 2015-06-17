@@ -1,0 +1,19 @@
+body {
+  padding: 50px ;
+  margin-right: 270px;
+  margin-left: 270px;
+  background-image: url(listki.gif);
+  background-repeat: repeat-y;
+  background-position: 17% 70%;
+}
+.tresc {
+  border: solid ;
+  padding: 20px;
+}
+p {
+  margin-top: 0px;
+}
+img {
+  float: left;
+  width: 80px;
+}

@@ -1,0 +1,68 @@
+@FullWidth: auto;
+@FullHeight: auto;
+@menuWidth:10%;
+@NagStoBor: 1px solid black;
+
+.NagSto{
+    background-color: darkgray;
+}
+
+
+.fullScreen{
+    width: @FullWidth;
+    height: @FullHeight;
+}
+
+html{
+    .fullScreen;
+    background-color: white;
+}
+
+body{
+    margin: 10px;
+    .fullScreen;
+    background-color: lightgray;
+    border: solid 1px gray;
+}
+
+div#menu{
+    padding: 5px;
+    height: 100%;
+    width: @menuWidth;
+    position: absolute;
+    text-align: center;
+}s
+
+div#naglowek{
+    .NagSto;
+    border-bottom: @NagStoBor;
+}
+
+.el_menu{
+    display: block;
+    width: auto;
+    margin-left: 2px;
+    border: outset 2px gray;
+    background-color: aliceblue;
+    :hover{
+        background-color: white;
+    }
+    :link{
+        text-decoration: none;
+        color: gray;
+    }
+}
+
+div#tresc{
+    height: 110%;
+    padding-top: 5px;
+    padding-left: 5px;
+    margin-left: @menuWidth+2%;
+    border-left: solid 3px gray;
+    background-color: aliceblue;
+}
+
+div#stopka{
+    .NagSto;
+    border-top: @NagStoBor;
+}

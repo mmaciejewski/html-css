@@ -1,0 +1,65 @@
+html, body {
+        height: 100%;
+        margin: 0px;
+}
+
+#outer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    div:nth-child(1) {
+        align-self: baseline;
+        background-color: gray;
+       
+    }
+    
+    div:nth-child(3) {
+        align-self:flex-end;
+        background-color: lightgray;
+    
+    }
+    
+    .box {   
+        width:50px;
+        height: 50px;
+        text-align: center;
+        background-color: darkgray;
+    }
+}
+
+/*// out: zad_01.css, compress: true 
+.loop(@c, @s) when (@c > 0) { 
+    .loop(@c - 1,darken(@s, 10%)); 
+    .box:nth-child(@{c}){ 
+        background-color: darken(@s, 10%); 
+        color:white; 
+        //text-align: center; 
+        width: 75px; height: 75px; 
+    } 
+} 
+
+#outer { 
+    height: 100vh; 
+    .loop(3,lightgrey); 
+    display: flex; 
+    //flex-basis: auto; 
+    // align-items: center; 
+    //flex-direction:row; 
+    justify-content: space-between; 
+} 
+
+.box:nth-child(1){ 
+    align-self: 
+        flex-start; align-items: 
+            flex-start; 
+} 
+.box:nth-child(2) { 
+    align-self: center; 
+    align-items:center; 
+} 
+.box:nth-child(3) { 
+    align-self: flex-end; 
+    align-items: flex-end; 
+}*/

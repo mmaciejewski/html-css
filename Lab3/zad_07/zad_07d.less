@@ -1,0 +1,34 @@
+@backgroundColor: grey;
+
+#banner {
+	background-color: @backgroundColor;
+	height: 2em;
+	width: auto;
+
+}
+
+#menu {
+	background-color: @backgroundColor + #222;
+	height: 15em;
+	width: 4em;
+	float: left;
+	margin-top: .2em;
+}
+@trescHeight: 20em;
+#tresc {
+	position: static;
+	background-color: @backgroundColor + #555;
+	height: @trescHeight;
+	width: auto;
+	margin-left: 4.2em;
+	margin-right: 4.2em;
+	margin-top: .2em;
+}
+
+#panel {
+	float:right;
+	background-color: @backgroundColor + #444;
+	height: 15em;
+	width: 4em;
+	margin-top: -@trescHeight;
+}

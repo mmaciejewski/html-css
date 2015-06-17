@@ -1,0 +1,67 @@
+@FullSize: 100%;
+@MenuWidth: 150px;
+@itemHeight: auto;
+@HeightItem: @FullSize;
+
+.FullScreen{
+    width: @FullSize;
+    height: @FullSize;
+}
+
+html, body {
+    .FullScreen;
+    margin: 0;
+}
+
+div#all {
+    display: flex;
+    flex-direction: column;
+    height: @HeightItem;
+    
+    @media (min-width: 720px){
+        flex-direction: row;
+    }
+}
+
+div#menu{
+    display: flex;
+    flex-direction: column;
+    min-width: @MenuWidth;
+    max-width: @MenuWidth;
+    background-color: #BBBBBB;
+    text-align: center;
+    align-items: center;
+    height: @HeightItem;
+    
+    
+    p{
+        min-height: @itemHeight;
+        max-height: @itemHeight;
+        display: block;
+        background-color: azure;
+        border: solid gray;
+        border-width: 1px;
+        border-left-width: 5px;
+        border-top-left-radius: 10px;
+        width: 70%;
+    }
+    
+    @media (max-width: 960px){
+        min-width: 70px;
+        max-width: 70px;
+    }
+    
+    @media (max-width: 720px){
+        flex-direction: row;
+        min-width: @FullSize;
+        max-width: @FullSize;
+        height: auto;
+        font-size: 80%;
+    }
+}
+
+div#main{
+    background-color: lightgray;
+    background-size: @FullSize;
+    height: @HeightItem;
+}

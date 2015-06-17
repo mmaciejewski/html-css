@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    table {border: solid 1px;}
+    </style>
+</head>
+<body>
+    <main>
+       
+        <img src="menu.gif" width="600" height="70" alt="menu" usemap="#menu">
+        <map name="menu">
+              <area shape="rect" coords="61,15,112,44"  href="https://www.google.pl/" alt="W1" title="W1">
+              <area shape="rect" coords="120,15,175,43" href="http://9gag.com/" alt="W2" title="W2">
+              <area shape="rect" coords="182,16,234,43" href="https://www.google.pl/" alt="W3" title="W3">
+              <area shape="rect" coords="239,16,294,44" href="https://www.google.pl/" alt="W4" title="W4">
+              <area shape="rect" coords="305,16,358,44" href="https://www.google.pl/" alt="W5" title="W5">
+              <area shape="rect" coords="371,15,428,44" href="https://www.google.pl/" alt="W6" title="W6">
+              <area shape="rect" coords="436,16,486,45" href="https://www.google.pl/" alt="W7" title="W7">
+         </map>
+        
+       
+       
+        <section>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+        </section>
+        <section>
+            <h5>CV:</h5>
+             <dl>
+              <dt>1992-2015</dt>
+              <dd>I'm alive</dd>
+              <dt>2000-2006</dt>
+              <dd>Szkoła podstawowa nr 6</dd>
+            </dl>
+            <p>Zainteresowania:</p>
+            <ul>
+                <li>Keyboard</li>
+                <li>gry</li>
+                <li>Psychologia</li>
+            </ul>
+            <table>
+                <tr>
+                    <td>encja</td>
+                    <td>symbol</td>
+                </tr>
+                <tr>
+                    <td>&amp;lt;</td>
+                    <td>&lt;</td>
+                </tr>
+                <tr>
+                    <td>&amp;gt;</td>
+                    <td>&gt;</td>
+                </tr>
+                <tr>
+                    <td>&amp;amp;</td>
+                    <td>&amp;</td>
+                </tr>
+                <tr>
+                    <td>&amp;copy;</td>
+                    <td>&copy;</td>
+                </tr>
+                <tr>
+                    <td>&amp;reg;</td>
+                    <td>&reg;</td>
+                </tr>
+            </table>
+            
+            <table>
+                <tr>
+                    <td rowspan="4">El Paso</td>
+                    <td rowspan="2">Czort</td>
+                    <td>Wielki Szlem</td>
+                </tr>
+                <tr>
+                    <td>Forta</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Ellora</td>
+                    <td>Witraż</td>
+                </tr>
+                <tr>
+                    <td>Elza</td>
+                </tr>
+            </table>
+            
+            <figure>
+                <img src='tygrys.jpg' alt='kotel' />
+                <figcaption>kto zacz</figcaption>
+            </figure>
+            
+            <a href="http://www.akwarium.org.pl" target="_blank">
+                 <img src="ryba-mala.png" title="Rybki" alt="ryba" />
+            </a>
+            
+             <form action="http://sigma.ug.edu.pl/~wpawlowski/utl/t1/" method="get">
+                 <table>
+                    <tr>
+                     <td> Użytkownik: <input type="text" name="uzytkownik"> <br></td>
+                    </tr>
+                    <tr>
+                     <td> Hasło: <input type="text" name="haslo"> <br></td>
+                    </tr>
+                    <tr>
+                     <td> <input type="submit" value="Akceptuj"> </td>
+                    </tr>
+                 </table>
+            </form> 
+                 
+            <form action="http://sigma.ug.edu.pl/~wpawlowski/utl/t3/" method="post">    
+                <table>
+                    <tr>
+                     <td>Data:</td>
+                     <td><input type="text" name="dzien" maxlength="2" size="2" style="font-family: monospace;"></td>
+                     <td> 
+                        <select name="miesiac">
+                          <option value="1">Styczeń</option>
+                          <option value="2">Luty</option>
+                          <option value="3">Marzec</option>
+                          <option value="4">Kwiecien</option>
+                          <option value="5">Maj</option>
+                          <option value="6">Czerwiec</option>
+                          <option value="7">Lipiec</option>
+                          <option value="8">Sierpień</option>
+                          <option value="9">Wrzesień</option>
+                          <option value="10">Październik</option>
+                          <option value="11">Listopad</option>
+                          <option value="12">Grudzień</option>                          
+                        </select> 
+                    </td>
+                        <td><input type="text" name="rok" maxlength="4" size="4" style="font-family: monospace;"></td>
+                        <td><input type="submit" value="Sprawdź"></td>
+                    </tr>
+                    <tr>
+                    <td colspan="5"><textarea name="notatka" placeholder="Miejsce na notatkę..."></textarea></td>    
+                    </tr>
+                 </table>
+            </form> 
+            
+            <form>
+                <table>
+                    <tr>
+                        <td>Imię:</td>
+                        <td><input type="text" name="imie" pattern="[A-Za-z]" required></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko:</td>
+                        <td><input type="text" name="nazwisko" pattern="[A-Za-z]" maxlength="15" required></td>
+                    </tr>
+                    <tr>
+                        <td>Telefon:</td>
+                        <td><input type="tel" name="telefon" pattern="[0-9]{9}" required></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Url:</td>
+                        <td><input type="" class=""></td>
+                    </tr>
+                    <tr>
+                        <td>Data urodzenia:</td>
+                        <td><input type="" class=""></td>
+                    </tr>
+                    <tr>
+                        <td>Kolor oczu:</td>
+                        <td><input type="" class=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="Przeslij"></td>
+                    </tr>
+                </table>          
+            </form>
+        </section>
+        
+    </main>
+    
+    <footer>
+         <address>
+            <a href="mailto:michal.maciejewski92@gmail.com">Michał Maciejewski</a>.<br>
+        </address> 
+    </footer>
+</body>
+</html>
